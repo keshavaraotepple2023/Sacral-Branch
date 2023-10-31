@@ -9,5 +9,8 @@ public class ParentAccountQuerySelector {
         return accountList;
     }
     
-   
+    public static List<Contact> getContactslist(){
+        List<Contact> con = [SELECT  Id, LastName, FirstName FROM Contact ];
+        return con;
+    }
 }

@@ -12,6 +12,12 @@
         <members>ParentAccountQuerySelector</members>
         <members>ChildCls</members>
         <members>childcls2</members>
+        <members>grandChildCls</members>
+        <members>grandchildcls2</members>
+        <members>grandchildcls3</members>
+        <members>childclsgrandchild1</members>
+        <members>childclsgrandchild2</members>
+        <members>childclsgrandchild3</members>
         <name>ApexClass</name>
     </types>
 

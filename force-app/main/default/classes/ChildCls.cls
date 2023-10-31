@@ -1,6 +1,9 @@
 public class ChildCls {
 
     public static void fetchaccounts(){
+        childclsgrandchild1.gmethod();
+        childclsgrandchild2.hmethod();
+        childclsgrandchild3.imethod();
         List<Account> accounts = ParentAccountQuerySelector.queryAccounts();
         
         for(Account ac:accounts){
@@ -9,8 +12,5 @@ public class ChildCls {
         }
     }
     
-     public static List<Contact> getContactslist(){
-        List<Contact> con = [SELECT  Id, LastName, FirstName FROM Contact ];
-        return con;
-    }
+    
 }
