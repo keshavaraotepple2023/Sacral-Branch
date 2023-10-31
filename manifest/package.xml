@@ -8,6 +8,10 @@
     <types>
         <members>LoanStatusCheckController</members>
         <members>LoanApplicationController</members>
+        <members>TechniciansController</members>
+        <members>ParentAccountQuerySelector</members>
+        <members>ChildCls</members>
+        <members>childcls2</members>
         <name>ApexClass</name>
     </types>
 
