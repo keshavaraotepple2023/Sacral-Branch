@@ -1,0 +1,18 @@
+<apex:page controller="LoanApplicationController" docType="html-5.0">
+    <apex:form >
+        <apex:pageBlock >
+            <apex:pageBlockSection >
+                <apex:inputText label="First Name" value="{!firstName}" required="true"/>
+                <apex:inputText label="Last Name" value="{!lastName}" required="true"/>
+                <apex:inputText label="Email" value="{!email}" required="true"/>
+                <apex:inputText label="Phone" value="{!phone}" required="true"/>
+                <apex:inputText label="Loan Amount" value="{!loanAmount}" required="true"/>
+                <apex:inputText label="Loan Type" value="{!loanApplication.Loan_Type__c}" required="true"/>
+               <apex:input label="DOB" value="{! dob }" html-placeholder="Start Date" type="date" />
+            </apex:pageBlockSection>
+            <apex:pageBlockButtons >
+                <apex:commandButton value="Submit" action="{!submitLoanApplication}" />
+            </apex:pageBlockButtons>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

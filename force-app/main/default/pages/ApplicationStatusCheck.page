@@ -1,0 +1,27 @@
+<apex:page controller="LoanStatusCheckController">
+    <apex:form >
+        <apex:pageMessages />
+
+        <apex:pageBlock >
+            <apex:pageBlockSection >
+                <apex:inputText value="{!loanId}" />
+                <apex:commandButton value="Get OTP" action="{!sendOtp}" reRender="otpBlock" />
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+
+        <apex:outputPanel id="otpBlock">
+            <apex:pageBlock rendered="{!showOtpSection}">
+                <apex:pageBlockSection >
+                    <apex:inputText value="{!enteredOTP}" />
+                    <apex:commandButton value="Check Status" action="{!checkStatus}" />
+                </apex:pageBlockSection>
+            </apex:pageBlock>
+
+            <apex:pageBlock rendered="{!showStatusSection}">
+                <apex:pageBlockSection >
+                    <apex:outputText value="Loan Application Status: {!status}" />
+                </apex:pageBlockSection>
+            </apex:pageBlock>
+        </apex:outputPanel>
+    </apex:form>
+</apex:page>

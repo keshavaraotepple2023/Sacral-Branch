@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>feedback_on_declined</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(ISPICKVAL(Loan_Status__c , &quot;Declined&quot;),   ISBLANK(Feedback__c ) )</errorConditionFormula>
+    <errorDisplayField>Feedback__c</errorDisplayField>
+    <errorMessage>Please give the reason for decline in feedback</errorMessage>
+</ValidationRule>

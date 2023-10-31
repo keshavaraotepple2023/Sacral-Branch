@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+   <types>
+        <members>Loan_Application__c</members>
+        <name>CustomObject</name>
+    </types>
+
+    <types>
+        <members>LoanStatusCheckController</members>
+        <members>LoanApplicationController</members>
+        <name>ApexClass</name>
+    </types>
+
+    <types>
+        <members>ApplicationStatusCheck</members>
+        <members>LoanApplicationForm</members>
+        <name>ApexPage</name>
+    </types>
+    <types>
+        <members>LoanApplicationTrigger</members>
+        <name>ApexTrigger</name>
+    </types>
+    <version>58.0</version>
+</Package>
