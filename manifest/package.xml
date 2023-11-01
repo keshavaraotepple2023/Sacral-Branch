@@ -18,17 +18,22 @@
         <members>childclsgrandchild1</members>
         <members>childclsgrandchild2</members>
         <members>childclsgrandchild3</members>
+        <members>CustomerUpdateController</members>
+        <members>CustomerUpdateBatch</members>
         <name>ApexClass</name>
     </types>
 
     <types>
         <members>ApplicationStatusCheck</members>
         <members>LoanApplicationForm</members>
+        <members>batchvfpage</members>
         <name>ApexPage</name>
     </types>
+
     <types>
         <members>LoanApplicationTrigger</members>
         <name>ApexTrigger</name>
     </types>
+    
     <version>58.0</version>
 </Package>

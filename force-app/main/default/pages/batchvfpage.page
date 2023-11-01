@@ -1,0 +1,29 @@
+<apex:page standardController="Customer" extensions="CustomerUpdateController"  showHeader="false" sidebar="true">
+    <style>
+        body .bPageBlock .pbHeader {
+        background-color: green; 
+        
+        }
+    </style>
+    
+    <apex:form >
+        <apex:pageBlock title="Update Customer Account Type">
+            <apex:pageBlockSection >
+                <apex:inputText value="{!customerName}" label="Customer Name"/>
+            </apex:pageBlockSection>
+            <apex:pageBlockButtons location="bottom">
+                <apex:commandButton value="Replace" action="{!updateAccountType}" rerender="resultPanel"/>
+            </apex:pageBlockButtons>
+        </apex:pageBlock>
+        
+        <apex:outputPanel id="resultPanel">
+            <apex:pageBlock title="Update Account Type Field Value">
+                <apex:pageBlockTable value="{!updatedCustomers}" var="customer">
+                    <apex:column value="{!customer.Name}"/>
+                    <apex:column value="{!customer.Account_Type__c}"/>
+                </apex:pageBlockTable>
+            </apex:pageBlock>
+        </apex:outputPanel>
+    </apex:form>
+
+</apex:page>
